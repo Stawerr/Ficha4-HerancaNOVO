@@ -66,15 +66,16 @@ namespace Ficha4_HeritageC_Sharp
 
         public static double calcularSalario(List<Funcionario> funcionarios, int op)
         {
-            Console.WriteLine("Quantas horas trabalha por dia?");
+            Console.WriteLine("Quantas horas trabalha no mês?");
             double horas= int.Parse(Console.ReadLine());
+
+            double salario = 0;
 
             for (int i = 0; i < funcionarios.Count; i++)
             {
                 if (typeof(Gerente) == funcionarios[i].GetType() && funcionarios[i].Id == op)
                 {
-                    horas = horas * funcionarios[i].ValorHora;
-                    double salario= horas * DateTime.DaysInMonth(DateTime.Today.Day,DateTime.Today.Month);
+                    salario = horas * funcionarios[i].ValorHora;
                     return salario;
                 }
             }

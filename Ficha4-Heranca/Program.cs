@@ -145,14 +145,12 @@ namespace Ficha4_HeritageC_Sharp
                         Gerente.alterarValorHora(funcionarios, op);
                         break;
                     case 2:
-                        Gerente.calcularIdade(funcionarios, op);
                         int valor= Gerente.calcularIdade(funcionarios, op);
                         Console.WriteLine("A idade do gerente é "+ valor);
                         Console.ReadKey();
                         break;
                     case 3:
-                        Gerente.calcularSalario(funcionarios, op);
-                        double salario = Gerente.calcularIdade(funcionarios, op);
+                        double salario = Gerente.calcularSalario(funcionarios, op);
                         Console.WriteLine("O salário do gerente é " + salario);
                         Console.ReadKey();
                         break;
