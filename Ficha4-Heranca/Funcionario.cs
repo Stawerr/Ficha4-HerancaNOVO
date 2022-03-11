@@ -15,7 +15,7 @@ namespace Ficha4_HeritageC_Sharp
 
         public Funcionario()
         {
-
+            
         }
 
         public Funcionario(int id, string nome, DateTime dataNasc, string eMail, double valorHora)
